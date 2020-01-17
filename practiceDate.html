@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+    <title>PRACTICE TEST</title>
+</head>
+
+<body>
+    <script src="practiceDateSeconMethod.js"></script>
+    <center>
+        <table border="1" style="text-align: center;">
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <th>Maths marks:</th>
+                <td><input type="text"  id="mathsMarks"></td>
+            </tr>
+            <tr>
+                <th>English marks:</th>
+                <td><input type="text" id="englishMarks"></td>
+            </tr>
+            <tr>
+                <th>Passing year:</th>
+                <td><select id="passingYear">
+                        <script>
+                            for (var i = 2020; i >= 2000; i--)
+                                document.write("<option>" + i + "</option>")
+                        </script>
+                    </select></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" id="submit" value="Submit" onclick="validateData()"></td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+    <center>
+        <div id="display">
+
+        </div>
+</center>
+</body>
+
+</html>
